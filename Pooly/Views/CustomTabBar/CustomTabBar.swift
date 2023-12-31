@@ -23,46 +23,19 @@ struct CustomTabBar: View {
             Button {
                 selectedTab = .account
             } label: {
-                GeometryReader { geo in
-                    HStack (alignment: .center, spacing: 6){
-                        Image(systemName: "person")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 15, height: 18)
-                        Text("Account")
-                            .font(.custom( "buttonFont", fixedSize: 13))
-                    }.frame(width: geo.size.width, height: geo.size.height)
-                }
+                TabBarButton(buttonText: "Account", imageName: "person", isActive: selectedTab == .account)
             }.tint(Color.black)
             
             
             Button {
-                selectedTab = .play
+                
             } label: {
-                GeometryReader { geo in
-                    HStack (alignment: .center, spacing: 6){
-                        Image(systemName: "play")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 12, height: 18)
-                        Text("Play")
-                            .font(.custom("buttonFont", fixedSize: 13))
-                    }.frame(width: geo.size.width, height: geo.size.height)
-                }
+                TabBarButton(buttonText: "Play", imageName: "play", isActive: selectedTab == .play)
             }.tint(Color.black)
             Button {
                 selectedTab = .leaderboard
             } label: {
-                GeometryReader { geo in
-                    HStack (alignment: .center, spacing: 6) {
-                        Image(systemName: "trophy")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 16, height: 18)
-                        Text("Leaderboard")
-                            .font(.custom("buttonFont", fixedSize: 13))
-                    }.frame(width: geo.size.width, height: geo.size.height)
-                }
+                TabBarButton(buttonText: "Leaderboard", imageName: "trophy", isActive: selectedTab == .leaderboard)
             }.tint(Color.black)
             
         }
@@ -78,5 +51,5 @@ struct CustomTabBar: View {
 }
 
 #Preview {
-    CustomTabBar(selectedTab: .constant(.play))
+    CustomTabBar(selectedTab: .constant(.account))
 }

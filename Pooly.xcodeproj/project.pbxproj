@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		043130E02B3F95D200865BD9 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043130DF2B3F95D200865BD9 /* CustomTabBar.swift */; };
 		043130E22B3F96DA00865BD9 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043130E12B3F96DA00865BD9 /* RootView.swift */; };
+		043130E42B41FDCD00865BD9 /* TabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043130E32B41FDCD00865BD9 /* TabBarButton.swift */; };
+		043130E62B42065A00865BD9 /* AppTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043130E52B42065A00865BD9 /* AppTabBarView.swift */; };
+		043130E82B4206AF00865BD9 /* CustomTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043130E72B4206AF00865BD9 /* CustomTabBarView.swift */; };
+		043130EA2B420EFF00865BD9 /* CustomTabBarContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043130E92B420EFF00865BD9 /* CustomTabBarContainerView.swift */; };
 		0494F54E2B3CDCAE0069153D /* PoolyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0494F54D2B3CDCAE0069153D /* PoolyApp.swift */; };
 		0494F5522B3CDCAE0069153D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0494F5512B3CDCAE0069153D /* Assets.xcassets */; };
 		0494F5552B3CDCAE0069153D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0494F5542B3CDCAE0069153D /* Preview Assets.xcassets */; };
@@ -17,6 +21,10 @@
 /* Begin PBXFileReference section */
 		043130DF2B3F95D200865BD9 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 		043130E12B3F96DA00865BD9 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		043130E32B41FDCD00865BD9 /* TabBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarButton.swift; sourceTree = "<group>"; };
+		043130E52B42065A00865BD9 /* AppTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabBarView.swift; sourceTree = "<group>"; };
+		043130E72B4206AF00865BD9 /* CustomTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarView.swift; sourceTree = "<group>"; };
+		043130E92B420EFF00865BD9 /* CustomTabBarContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarContainerView.swift; sourceTree = "<group>"; };
 		0494F54A2B3CDCAE0069153D /* Pooly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pooly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0494F54D2B3CDCAE0069153D /* PoolyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoolyApp.swift; sourceTree = "<group>"; };
 		0494F5512B3CDCAE0069153D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -47,6 +55,10 @@
 			isa = PBXGroup;
 			children = (
 				043130DF2B3F95D200865BD9 /* CustomTabBar.swift */,
+				043130E32B41FDCD00865BD9 /* TabBarButton.swift */,
+				043130E52B42065A00865BD9 /* AppTabBarView.swift */,
+				043130E92B420EFF00865BD9 /* CustomTabBarContainerView.swift */,
+				043130E72B4206AF00865BD9 /* CustomTabBarView.swift */,
 			);
 			path = CustomTabBar;
 			sourceTree = "<group>";
@@ -157,8 +169,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				043130E02B3F95D200865BD9 /* CustomTabBar.swift in Sources */,
+				043130E42B41FDCD00865BD9 /* TabBarButton.swift in Sources */,
 				043130E22B3F96DA00865BD9 /* RootView.swift in Sources */,
+				043130E82B4206AF00865BD9 /* CustomTabBarView.swift in Sources */,
 				0494F54E2B3CDCAE0069153D /* PoolyApp.swift in Sources */,
+				043130E62B42065A00865BD9 /* AppTabBarView.swift in Sources */,
+				043130EA2B420EFF00865BD9 /* CustomTabBarContainerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
