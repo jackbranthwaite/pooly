@@ -10,6 +10,7 @@ import SwiftUI
 struct CustomTabBarContainerView<Content: View>: View {
     
     @Binding var selection: TabBarItem
+    @State private var tabs: [TabBarItem] = []
     
     let content: Content
     
@@ -19,10 +20,30 @@ struct CustomTabBarContainerView<Content: View>: View {
     }
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack(alignment: .bottom) {
+            
+            content
+                .ignoresSafeArea()
+            CustomTabBarView(tabs: tabs, selection: $selection, localSelection: selection)
+        }
+       
+        .onPreferenceChange(TabBarItemsPreferenceKey.self, perform: { value in
+            self.tabs = value
+        })
     }
 }
 
-#Preview {
-    CustomTabBarContainerView()
+struct CustomTabBarContainerView_Preview: PreviewProvider {
+    static let tabs: [TabBarItem] = [
+        .account,
+        .play,
+        .leaderboard
+    ]
+    
+    static var previews: some View {
+        CustomTabBarContainerView(selection: .constant(tabs.first!)) {
+            Color.red
+        }
+    }
 }
+

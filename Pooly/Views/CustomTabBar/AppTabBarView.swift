@@ -7,12 +7,25 @@
 
 import SwiftUI
 
-struct AppTabBar: View {
+struct AppTabBarView: View {
+    
+    @State private var tabSelection: TabBarItem = .account
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        CustomTabBarContainerView(selection: $tabSelection) {
+            AccountView()
+                .tabBarItem(tab: .account, selection: $tabSelection)
+            PlayView()
+                .tabBarItem(tab: .play, selection: $tabSelection)
+            LeaderBoardView()
+                .tabBarItem(tab: .leaderboard, selection: $tabSelection)
+        }
     }
 }
 
-#Preview {
-    AppTabBar()
+struct AppTabBarView_Preview: PreviewProvider {
+    
+    static var previews: some View {
+        AppTabBarView()
+    }
 }
