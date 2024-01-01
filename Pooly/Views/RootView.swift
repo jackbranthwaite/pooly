@@ -13,8 +13,7 @@ struct RootView: View {
     
     var body: some View {
         VStack {
-            Text("Pooly")
-                .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+            Header()
             Spacer()
             AppTabBarView()
         }

@@ -56,6 +56,7 @@ extension CustomTabBarView {
         }
         .foregroundColor(Color.black)
         .padding(.vertical, 5)
+        
         .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
         .background(
             ZStack {
@@ -67,6 +68,7 @@ extension CustomTabBarView {
             }
         )
         .padding(6)
+
     }
     
     private var tabBar: some View {
@@ -82,7 +84,7 @@ extension CustomTabBarView {
         .overlay(RoundedRectangle(cornerRadius: 12).stroke( (Color(red: 229/255, green: 229/255, blue: 229/255)), lineWidth: 1))
         .background(Color(red: 241/255, green: 245/255, blue: 251/255).clipShape(RoundedRectangle(cornerRadius:12)))
         .padding(.vertical, 10)
-        .padding(.horizontal, 10)
+        .padding(.horizontal, 24)
 //        .shadow(color: Color.black.opacity(0.1), radius:5, x: 0, y: 5)
     }
     

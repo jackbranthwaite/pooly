@@ -16,6 +16,7 @@
 		043130F12B423E1B00865BD9 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043130F02B423E1B00865BD9 /* AccountView.swift */; };
 		043130F42B423E5500865BD9 /* LeaderBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043130F32B423E5500865BD9 /* LeaderBoardView.swift */; };
 		043130F72B423E7900865BD9 /* PlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043130F62B423E7900865BD9 /* PlayView.swift */; };
+		043130FA2B42415400865BD9 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043130F92B42415400865BD9 /* Header.swift */; };
 		0494F54E2B3CDCAE0069153D /* PoolyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0494F54D2B3CDCAE0069153D /* PoolyApp.swift */; };
 		0494F5522B3CDCAE0069153D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0494F5512B3CDCAE0069153D /* Assets.xcassets */; };
 		0494F5552B3CDCAE0069153D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0494F5542B3CDCAE0069153D /* Preview Assets.xcassets */; };
@@ -31,6 +32,7 @@
 		043130F02B423E1B00865BD9 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		043130F32B423E5500865BD9 /* LeaderBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoardView.swift; sourceTree = "<group>"; };
 		043130F62B423E7900865BD9 /* PlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayView.swift; sourceTree = "<group>"; };
+		043130F92B42415400865BD9 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
 		0494F54A2B3CDCAE0069153D /* Pooly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pooly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0494F54D2B3CDCAE0069153D /* PoolyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoolyApp.swift; sourceTree = "<group>"; };
 		0494F5512B3CDCAE0069153D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +53,7 @@
 		043130DD2B3F956D00865BD9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				043130F82B42414500865BD9 /* Header */,
 				043130F52B423E6700865BD9 /* PlayPage */,
 				043130F22B423E4500865BD9 /* LeaderboardPage */,
 				043130EF2B423E0D00865BD9 /* AccountPage */,
@@ -94,6 +97,14 @@
 				043130F62B423E7900865BD9 /* PlayView.swift */,
 			);
 			path = PlayPage;
+			sourceTree = "<group>";
+		};
+		043130F82B42414500865BD9 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				043130F92B42415400865BD9 /* Header.swift */,
+			);
+			path = Header;
 			sourceTree = "<group>";
 		};
 		0494F5412B3CDCAE0069153D = {
@@ -206,6 +217,7 @@
 				043130F12B423E1B00865BD9 /* AccountView.swift in Sources */,
 				043130E82B4206AF00865BD9 /* CustomTabBarView.swift in Sources */,
 				043130F42B423E5500865BD9 /* LeaderBoardView.swift in Sources */,
+				043130FA2B42415400865BD9 /* Header.swift in Sources */,
 				0494F54E2B3CDCAE0069153D /* PoolyApp.swift in Sources */,
 				043130E62B42065A00865BD9 /* AppTabBarView.swift in Sources */,
 				043130EA2B420EFF00865BD9 /* CustomTabBarContainerView.swift in Sources */,
