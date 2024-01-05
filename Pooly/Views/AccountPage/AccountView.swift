@@ -10,7 +10,7 @@ import SwiftUI
 struct AccountView: View {
     var body: some View {
         ScrollView {
-            Text("Account")
+            AccountTileView()
         }
     }
 }
