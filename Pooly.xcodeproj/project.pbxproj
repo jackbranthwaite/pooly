@@ -21,6 +21,8 @@
 		0448B70D2B491E6D000B6638 /* LeaderboardTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0448B70C2B491E6D000B6638 /* LeaderboardTileView.swift */; };
 		0448B7112B492213000B6638 /* UserImageNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0448B7102B492213000B6638 /* UserImageNameView.swift */; };
 		0448B7142B49296F000B6638 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0448B7132B49296F000B6638 /* ButtonView.swift */; };
+		0448B7172B49379F000B6638 /* RecentGamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0448B7162B49379F000B6638 /* RecentGamesView.swift */; };
+		0448B71A2B493B74000B6638 /* RecentGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0448B7192B493B74000B6638 /* RecentGameView.swift */; };
 		0494F54E2B3CDCAE0069153D /* PoolyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0494F54D2B3CDCAE0069153D /* PoolyApp.swift */; };
 		0494F5522B3CDCAE0069153D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0494F5512B3CDCAE0069153D /* Assets.xcassets */; };
 		0494F5552B3CDCAE0069153D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0494F5542B3CDCAE0069153D /* Preview Assets.xcassets */; };
@@ -41,6 +43,8 @@
 		0448B70C2B491E6D000B6638 /* LeaderboardTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardTileView.swift; sourceTree = "<group>"; };
 		0448B7102B492213000B6638 /* UserImageNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserImageNameView.swift; sourceTree = "<group>"; };
 		0448B7132B49296F000B6638 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		0448B7162B49379F000B6638 /* RecentGamesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentGamesView.swift; sourceTree = "<group>"; };
+		0448B7192B493B74000B6638 /* RecentGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentGameView.swift; sourceTree = "<group>"; };
 		0494F54A2B3CDCAE0069153D /* Pooly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pooly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0494F54D2B3CDCAE0069153D /* PoolyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoolyApp.swift; sourceTree = "<group>"; };
 		0494F5512B3CDCAE0069153D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -61,6 +65,7 @@
 		043130DD2B3F956D00865BD9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0448B7152B49378A000B6638 /* RecentGames */,
 				0448B7122B492963000B6638 /* Button */,
 				043130F82B42414500865BD9 /* Header */,
 				043130F52B423E6700865BD9 /* PlayPage */,
@@ -97,7 +102,6 @@
 		043130F22B423E4500865BD9 /* LeaderboardPage */ = {
 			isa = PBXGroup;
 			children = (
-				0448B7102B492213000B6638 /* UserImageNameView.swift */,
 				043130F32B423E5500865BD9 /* LeaderBoardView.swift */,
 			);
 			path = LeaderboardPage;
@@ -130,6 +134,7 @@
 		0448B70B2B491E5A000B6638 /* LeaderboardTile */ = {
 			isa = PBXGroup;
 			children = (
+				0448B7102B492213000B6638 /* UserImageNameView.swift */,
 				0448B70C2B491E6D000B6638 /* LeaderboardTileView.swift */,
 			);
 			path = LeaderboardTile;
@@ -141,6 +146,23 @@
 				0448B7132B49296F000B6638 /* ButtonView.swift */,
 			);
 			path = Button;
+			sourceTree = "<group>";
+		};
+		0448B7152B49378A000B6638 /* RecentGames */ = {
+			isa = PBXGroup;
+			children = (
+				0448B7182B493B65000B6638 /* RecentGame */,
+				0448B7162B49379F000B6638 /* RecentGamesView.swift */,
+			);
+			path = RecentGames;
+			sourceTree = "<group>";
+		};
+		0448B7182B493B65000B6638 /* RecentGame */ = {
+			isa = PBXGroup;
+			children = (
+				0448B7192B493B74000B6638 /* RecentGameView.swift */,
+			);
+			path = RecentGame;
 			sourceTree = "<group>";
 		};
 		0494F5412B3CDCAE0069153D = {
@@ -257,11 +279,13 @@
 				043130F12B423E1B00865BD9 /* AccountView.swift in Sources */,
 				043130E82B4206AF00865BD9 /* CustomTabBarView.swift in Sources */,
 				043130F42B423E5500865BD9 /* LeaderBoardView.swift in Sources */,
+				0448B7172B49379F000B6638 /* RecentGamesView.swift in Sources */,
 				043130FA2B42415400865BD9 /* Header.swift in Sources */,
 				0494F54E2B3CDCAE0069153D /* PoolyApp.swift in Sources */,
 				043130E62B42065A00865BD9 /* AppTabBarView.swift in Sources */,
 				043130EA2B420EFF00865BD9 /* CustomTabBarContainerView.swift in Sources */,
 				043130F72B423E7900865BD9 /* PlayView.swift in Sources */,
+				0448B71A2B493B74000B6638 /* RecentGameView.swift in Sources */,
 				043130EC2B42310700865BD9 /* TabBarItemsPreferenceKey.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

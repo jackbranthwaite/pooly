@@ -17,12 +17,12 @@ struct RootView: View {
             Spacer()
             AppTabBarView()
         }
-        .background(Color(red: 206/255, green: 204/255, blue: 245/255, opacity: 1))
+        .background(LinearGradient(gradient: Gradient(colors: [Color(red: 207/255, green: 225/255, blue: 241/255), Color(red: 206/255, green: 204/255, blue: 245/255)]), startPoint: .top, endPoint: .bottom))
    
     }
         
 }
 
-#Preview {
+#Preview { 
     RootView()
 }

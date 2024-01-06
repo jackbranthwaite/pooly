@@ -23,7 +23,7 @@ struct ButtonView: View {
                         .padding(.trailing)
                 })
             })
-            .frame(maxWidth: .infinity, maxHeight: 42)
+            .frame(maxWidth: .infinity, minHeight: 42, maxHeight: 42)
             .cornerRadius(8)
             .foregroundStyle(Color(red: 207/255, green: 214/255, blue: 244/255, opacity: 0.4))
             
