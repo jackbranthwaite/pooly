@@ -11,6 +11,7 @@ struct AccountView: View {
     var body: some View {
         ScrollView {
             AccountTileView()
+            LeaderboardTileView()
         }
     }
 }
