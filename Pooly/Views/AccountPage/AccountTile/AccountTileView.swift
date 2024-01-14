@@ -54,11 +54,13 @@ struct AccountTileView: View {
         .frame(maxWidth: .infinity, maxHeight: 92)
         .overlay(RoundedRectangle(cornerRadius: 12).stroke( (Color(red: 229/255, green: 229/255, blue: 229/255)), lineWidth: 1))
         .background(Color(red: 241/255, green: 245/255, blue: 251/255).clipShape(RoundedRectangle(cornerRadius:12)))
-        .padding(.top, 24)
+        .padding(.top, 10)
         .padding(.horizontal, 24)
     }
 }
 
-#Preview {
-    AccountTileView()
+struct AccountTileView_Previews: PreviewProvider {
+    static var previews: some View {
+       AccountTileView()
+    }
 }

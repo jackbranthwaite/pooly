@@ -9,20 +9,20 @@ import SwiftUI
 
 struct RecentGameView: View {
     var body: some View {
-        HStack {
-            HStack(spacing: -40) {
+        HStack(alignment: .center) {
+            HStack(spacing: -15) {
                 Circle()
                     .stroke(Color.black,lineWidth: 0.5)
-                        .background(Circle().foregroundColor(Color.orange))
+                    .background(Circle().foregroundColor(Color.orange))
                     .frame(width: 38, height: 38, alignment: .leading)
-                    
+                
                 Circle()
                     .stroke(Color.black,lineWidth: 0.5)
-                        .background(Circle().foregroundColor(Color.blue))
+                    .background(Circle().foregroundColor(Color.blue))
                     .frame(width: 38, height: 38, alignment: .leading)
-                    
+                
             }
-                .padding()
+            .padding()
             VStack(alignment: .leading, content: {
                 Text("Jack vs Ryan")
                     .font(.system(size: 14))
@@ -32,11 +32,33 @@ struct RecentGameView: View {
                 
             })
             Spacer()
+            VStack(alignment: .center, spacing: -25, content: {
+                
+                Circle()
+                    .foregroundStyle(Color.green)
+                    .frame(width: 12, height: 12)
+                    .overlay( content: {
+                        Text("W")
+                            .foregroundStyle(Color.white)
+                            .font(.system(size: 8))
+                    })
+                    .padding(.leading, 18)
+                    .zIndex(1.0)
+                Circle()
+                    .stroke(Color.black,lineWidth: 0.5)
+                    .background(Circle().foregroundColor(Color.blue))
+                    .frame(width: 25, height: 25, alignment: .leading)
+                    .padding()
+            })
+        
+            
         }
-            .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
-            .background(Color.pink)
-            .clipShape(RoundedRectangle(cornerRadius: 8.0))
-            .padding()
+        .frame(maxWidth: .infinity)
+        .background(Color.white)
+        .clipShape(RoundedRectangle(cornerRadius: 8.0))
+        .padding(.horizontal, 15)
+        .padding(.bottom, 15)
+            
         
     }
 }

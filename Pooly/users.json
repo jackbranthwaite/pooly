@@ -1,0 +1,68 @@
+[
+    {
+     "id": 1,
+     "first_name": "Jack",
+     "last_name": "Branthwaite",
+     "email": "jack@clicksuite.co.nz",
+     "colour": "orange",
+     "memoji": 1,
+     "company": "ClickSuite",
+     "current_position": 1,
+     "win_percentage": 71
+    },
+    {
+     "id": 2,
+     "first_name": "Jamie",
+     "last_name": "Morgan-Lee",
+     "email": "jamie@clicksuite.co.nz",
+     "colour": "red",
+     "memoji": 2,
+     "company": "ClickSuite",
+     "current_position": 6,
+     "win_percentage": 45
+    },
+    {
+     "id": 3,
+     "first_name": "Ryan",
+     "last_name": "Allen",
+     "email": "ryan@juniorfilms.co.nz",
+     "colour": "green",
+     "memoji": 3,
+     "company": "JuniorFilms",
+     "current_position": 3,
+     "win_percentage": 70
+    },
+    {
+     "id": 4,
+     "first_name": "Meike",
+     "last_name": "Ahlers",
+     "email": "meike@clicksuite.co.nz",
+     "colour": "violet",
+     "memoji": 4,
+     "company": "ClickSuite",
+     "current_position": 5,
+     "win_percentage": 56
+    },
+    {
+     "id": 5,
+     "first_name": "Louie",
+     "last_name": "Alexander",
+     "email": "louie@clicksuite.co.nz",
+     "colour": "blue",
+     "memoji": 5,
+     "company": "ClickSuite",
+     "current_position": 2,
+     "win_percentage": 69
+    },
+    {
+     "id": 6,
+     "first_name": "Vincent",
+     "last_name": "Gabriel",
+     "email": "vincent@juniorfilms.co.nz",
+     "colour": "pink",
+     "memoji": 6,
+     "company": "JuniorFilms",
+     "current_position": 4,
+     "win_percentage": 60
+    }
+]

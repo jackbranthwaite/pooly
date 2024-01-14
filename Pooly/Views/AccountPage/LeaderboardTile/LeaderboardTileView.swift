@@ -17,24 +17,24 @@ struct LeaderboardTileView: View {
                 Image(systemName: "arrow.down.left.arrow.up.right")
                     .font(.system(size: 14))
             }
-                .padding(.horizontal, 20)
-                .padding(.top, 24)
+                .padding(.horizontal, 16)
+                .padding(.top, 16)
+                .padding(.bottom, 10)
             VStack {
-                UserImageNameView()
-                UserImageNameView()
-                UserImageNameView()
-                
+//                UserImageNameView()
+//                UserImageNameView()
+//                UserImageNameView()
+//                
             }
-                .padding(.horizontal, 20)
-                .padding(.vertical)
+                .padding(.horizontal, 16)
             ButtonView()
-                .padding(.horizontal, 20)
-                .padding(.bottom, 24)
+                .padding(.horizontal, 16)
+                .padding(.bottom, 16)
         }
         .frame(maxWidth: .infinity)
         .overlay(RoundedRectangle(cornerRadius: 12).stroke( (Color(red: 229/255, green: 229/255, blue: 229/255)), lineWidth: 1))
         .background(Color(red: 241/255, green: 245/255, blue: 251/255).clipShape(RoundedRectangle(cornerRadius:12)))
-        .padding(.vertical, 24)
+        .padding(.top, 10)
         .padding(.horizontal, 24)
     }
 }

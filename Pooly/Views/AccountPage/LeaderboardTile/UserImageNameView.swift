@@ -8,9 +8,12 @@
 import SwiftUI
 
 struct UserImageNameView: View {
+    
+    let user: User
+    
     var body: some View {
         HStack {
-            Text("1")
+            Text("\(user.current_position)")
                 .font(.system(size: 12))
                 .background(Rectangle().fill(Color.white).cornerRadius(4.0).frame(width: 20, height: 20))
                 .multilineTextAlignment(.center)
@@ -21,9 +24,9 @@ struct UserImageNameView: View {
                 .frame(width: 40, height: 40, alignment: .leading)
                 
             VStack(alignment: .leading, spacing: 2, content: {
-                Text("Jack Branthwaite")
+                Text(user.first_name + " " + user.last_name)
                     .font(.system(size: 11, weight: .bold))
-                Text("@ClickSuite")
+                Text("@" + user.company)
                     .font(.system(size: 11))
                     .foregroundStyle(.gray)
             })
@@ -36,6 +39,10 @@ struct UserImageNameView: View {
         
 }
 
-#Preview {
-    UserImageNameView()
+struct UserImageNameView_Previews: PreviewProvider {
+    static var previews: some View {
+        NavigationView {
+            UserImageNameView(user: User.example)
+        }
+    }
 }

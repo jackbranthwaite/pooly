@@ -9,6 +9,7 @@ import SwiftUI
 
 @main
 struct PoolyApp: App {
+    
     var body: some Scene {
         WindowGroup {
            RootView()
