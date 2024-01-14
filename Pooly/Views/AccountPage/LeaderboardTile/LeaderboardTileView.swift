@@ -8,6 +8,17 @@
 import SwiftUI
 
 struct LeaderboardTileView: View {
+    
+    // TODO: Hardcoded test data
+    
+    let users: [User]
+    
+    init() {
+        let url = Bundle.main.url(forResource: "users", withExtension: "json")!
+        let data = try! Data(contentsOf: url)
+        users = try! JSONDecoder().decode([User].self, from: data).sorted { $0.current_position < $1.current_position }
+    }
+    
     var body: some View {
         VStack {
             HStack {
@@ -21,10 +32,11 @@ struct LeaderboardTileView: View {
                 .padding(.top, 16)
                 .padding(.bottom, 10)
             VStack {
-//                UserImageNameView()
-//                UserImageNameView()
-//                UserImageNameView()
-//                
+                
+                ForEach(users.prefix(3)) { user in
+                    UserImageNameView(user: user, users: users)
+                }
+                
             }
                 .padding(.horizontal, 16)
             ButtonView()

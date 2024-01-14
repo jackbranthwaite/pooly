@@ -9,6 +9,8 @@ import SwiftUI
 
 struct LeaderBoardView: View {
     
+    // TODO: Hardcoded test data
+    
     let users: [User]
     
     init() {
@@ -23,7 +25,7 @@ struct LeaderBoardView: View {
            AccountTileView()
             VStack() {
                 ForEach(users, id: \.self) { user in
-                    UserImageNameView(user: user)
+                    UserImageNameView(user: user, users: users)
                         .padding(.bottom, 20)
                 }
             }

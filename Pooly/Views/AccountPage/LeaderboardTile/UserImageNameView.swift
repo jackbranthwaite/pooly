@@ -10,6 +10,7 @@ import SwiftUI
 struct UserImageNameView: View {
     
     let user: User
+    let users: [User]
     
     var body: some View {
         HStack {
@@ -30,6 +31,18 @@ struct UserImageNameView: View {
                     .font(.system(size: 11))
                     .foregroundStyle(.gray)
             })
+            Spacer()
+            HStack(){
+                if user.current_position == 1 {
+                    Text("🥇")
+                } else if user.current_position == 2 {
+                    Text("🥈")
+                } else if user.current_position == 3 {
+                    Text("🥉")
+                } else if user.current_position == users.count {
+                    Text("🥄")
+                }
+            }
         }
         .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
         .padding(.bottom, 10)
@@ -42,7 +55,7 @@ struct UserImageNameView: View {
 struct UserImageNameView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            UserImageNameView(user: User.example)
+            UserImageNameView(user: User.example, users: [User.example])
         }
     }
 }
