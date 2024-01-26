@@ -12,6 +12,7 @@ struct Header: View {
         HStack{
             Text("🎱 Pooly")
                 .font(.system(size: 14))
+                .bold()
         }
         .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
         .padding(.horizontal, 24)

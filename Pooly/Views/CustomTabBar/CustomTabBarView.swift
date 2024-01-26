@@ -62,7 +62,7 @@ extension CustomTabBarView {
             ZStack {
                 if localSelection == tab {
                     RoundedRectangle(cornerRadius: 12)
-                        .fill(Color.white)
+                        .fill(Color(red:241/255, green:241/255, blue:241/255))
                         .matchedGeometryEffect(id: "background_rectangle", in: namespace)
                 }
             }
@@ -82,7 +82,7 @@ extension CustomTabBarView {
         }
         .frame(height: 50)
         .overlay(RoundedRectangle(cornerRadius: 12).stroke( (Color(red: 229/255, green: 229/255, blue: 229/255)), lineWidth: 1))
-        .background(Color(red: 241/255, green: 245/255, blue: 251/255).clipShape(RoundedRectangle(cornerRadius:12)))
+        .background(Color(red: 255/255, green: 255/255, blue: 255/255).clipShape(RoundedRectangle(cornerRadius:12)))
         .padding(.vertical, 10)
         .padding(.horizontal, 24)
 //        .shadow(color: Color.black.opacity(0.1), radius:5, x: 0, y: 5)

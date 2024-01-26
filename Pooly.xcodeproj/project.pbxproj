@@ -29,6 +29,7 @@
 		04D12C622B5386E600F11043 /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = 04D12C612B5386E600F11043 /* users.json */; };
 		04D12C642B53889B00F11043 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D12C632B53889B00F11043 /* User.swift */; };
 		04D12C662B538B2600F11043 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D12C652B538B2600F11043 /* Users.swift */; };
+		52B53CEF2B63514C00A30404 /* PlayCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B53CEE2B63514C00A30404 /* PlayCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		04D12C612B5386E600F11043 /* users.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
 		04D12C632B53889B00F11043 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		04D12C652B538B2600F11043 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		52B53CEE2B63514C00A30404 /* PlayCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 		043130F52B423E6700865BD9 /* PlayPage */ = {
 			isa = PBXGroup;
 			children = (
+				52B53CED2B63513800A30404 /* PlayCard */,
 				043130F62B423E7900865BD9 /* PlayView.swift */,
 			);
 			path = PlayPage;
@@ -209,6 +212,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		52B53CED2B63513800A30404 /* PlayCard */ = {
+			isa = PBXGroup;
+			children = (
+				52B53CEE2B63514C00A30404 /* PlayCardView.swift */,
+			);
+			path = PlayCard;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -288,6 +299,7 @@
 				04D12C662B538B2600F11043 /* Users.swift in Sources */,
 				0448B70A2B47F771000B6638 /* AccountTileView.swift in Sources */,
 				043130F12B423E1B00865BD9 /* AccountView.swift in Sources */,
+				52B53CEF2B63514C00A30404 /* PlayCardView.swift in Sources */,
 				043130E82B4206AF00865BD9 /* CustomTabBarView.swift in Sources */,
 				043130F42B423E5500865BD9 /* LeaderBoardView.swift in Sources */,
 				0448B7172B49379F000B6638 /* RecentGamesView.swift in Sources */,
