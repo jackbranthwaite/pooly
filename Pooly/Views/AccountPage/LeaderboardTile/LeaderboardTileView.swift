@@ -39,7 +39,7 @@ struct LeaderboardTileView: View {
                 
             }
                 .padding(.horizontal, 16)
-            ButtonView()
+            SecondaryButtonView()
                 .padding(.horizontal, 16)
                 .padding(.bottom, 16)
         }

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ButtonView: View {
+struct SecondaryButtonView: View {
     var body: some View {
         Rectangle()
             .overlay(content: {
@@ -31,5 +31,5 @@ struct ButtonView: View {
 }
 
 #Preview {
-    ButtonView()
+    SecondaryButtonView()
 }

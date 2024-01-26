@@ -37,7 +37,10 @@ struct PlayView: View {
                 .overlay(RoundedRectangle(cornerRadius: 12).stroke( (Color(red: 229/255, green: 229/255, blue: 229/255)), lineWidth: 1))
                 .background(Color(red: 241/255, green: 245/255, blue: 251/255).clipShape(RoundedRectangle(cornerRadius:12)))
                 .padding(.top, 30)
-                
+                Spacer()
+                PrimaryButtonView(text: "Father I would like a game") {
+                    print("Click Me")
+                }
             })
             .frame(maxWidth: .infinity, alignment: .leading) 
             .padding(.horizontal, 24)

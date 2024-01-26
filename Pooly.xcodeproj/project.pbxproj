@@ -20,7 +20,7 @@
 		0448B70A2B47F771000B6638 /* AccountTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0448B7092B47F771000B6638 /* AccountTileView.swift */; };
 		0448B70D2B491E6D000B6638 /* LeaderboardTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0448B70C2B491E6D000B6638 /* LeaderboardTileView.swift */; };
 		0448B7112B492213000B6638 /* UserImageNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0448B7102B492213000B6638 /* UserImageNameView.swift */; };
-		0448B7142B49296F000B6638 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0448B7132B49296F000B6638 /* ButtonView.swift */; };
+		0448B7142B49296F000B6638 /* SecondaryButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0448B7132B49296F000B6638 /* SecondaryButtonView.swift */; };
 		0448B7172B49379F000B6638 /* RecentGamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0448B7162B49379F000B6638 /* RecentGamesView.swift */; };
 		0448B71A2B493B74000B6638 /* RecentGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0448B7192B493B74000B6638 /* RecentGameView.swift */; };
 		0494F54E2B3CDCAE0069153D /* PoolyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0494F54D2B3CDCAE0069153D /* PoolyApp.swift */; };
@@ -29,6 +29,7 @@
 		04D12C622B5386E600F11043 /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = 04D12C612B5386E600F11043 /* users.json */; };
 		04D12C642B53889B00F11043 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D12C632B53889B00F11043 /* User.swift */; };
 		04D12C662B538B2600F11043 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D12C652B538B2600F11043 /* Users.swift */; };
+		52896B322B63587E00527528 /* PrimaryButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52896B312B63587E00527528 /* PrimaryButtonView.swift */; };
 		52B53CEF2B63514C00A30404 /* PlayCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B53CEE2B63514C00A30404 /* PlayCardView.swift */; };
 /* End PBXBuildFile section */
 
@@ -46,7 +47,7 @@
 		0448B7092B47F771000B6638 /* AccountTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTileView.swift; sourceTree = "<group>"; };
 		0448B70C2B491E6D000B6638 /* LeaderboardTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardTileView.swift; sourceTree = "<group>"; };
 		0448B7102B492213000B6638 /* UserImageNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserImageNameView.swift; sourceTree = "<group>"; };
-		0448B7132B49296F000B6638 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		0448B7132B49296F000B6638 /* SecondaryButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButtonView.swift; sourceTree = "<group>"; };
 		0448B7162B49379F000B6638 /* RecentGamesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentGamesView.swift; sourceTree = "<group>"; };
 		0448B7192B493B74000B6638 /* RecentGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentGameView.swift; sourceTree = "<group>"; };
 		0494F54A2B3CDCAE0069153D /* Pooly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pooly.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,6 +57,7 @@
 		04D12C612B5386E600F11043 /* users.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
 		04D12C632B53889B00F11043 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		04D12C652B538B2600F11043 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		52896B312B63587E00527528 /* PrimaryButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonView.swift; sourceTree = "<group>"; };
 		52B53CEE2B63514C00A30404 /* PlayCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,9 +75,8 @@
 		043130DD2B3F956D00865BD9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				52896B2F2B63584000527528 /* GenericComponents */,
 				0448B7152B49378A000B6638 /* RecentGames */,
-				0448B7122B492963000B6638 /* Button */,
-				043130F82B42414500865BD9 /* Header */,
 				043130F52B423E6700865BD9 /* PlayPage */,
 				043130F22B423E4500865BD9 /* LeaderboardPage */,
 				043130EF2B423E0D00865BD9 /* AccountPage */,
@@ -149,12 +150,12 @@
 			path = LeaderboardTile;
 			sourceTree = "<group>";
 		};
-		0448B7122B492963000B6638 /* Button */ = {
+		0448B7122B492963000B6638 /* SecondaryButton */ = {
 			isa = PBXGroup;
 			children = (
-				0448B7132B49296F000B6638 /* ButtonView.swift */,
+				0448B7132B49296F000B6638 /* SecondaryButtonView.swift */,
 			);
-			path = Button;
+			path = SecondaryButton;
 			sourceTree = "<group>";
 		};
 		0448B7152B49378A000B6638 /* RecentGames */ = {
@@ -210,6 +211,24 @@
 				0494F5542B3CDCAE0069153D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		52896B2F2B63584000527528 /* GenericComponents */ = {
+			isa = PBXGroup;
+			children = (
+				52896B302B63586D00527528 /* PrimaryButton */,
+				0448B7122B492963000B6638 /* SecondaryButton */,
+				043130F82B42414500865BD9 /* Header */,
+			);
+			path = GenericComponents;
+			sourceTree = "<group>";
+		};
+		52896B302B63586D00527528 /* PrimaryButton */ = {
+			isa = PBXGroup;
+			children = (
+				52896B312B63587E00527528 /* PrimaryButtonView.swift */,
+			);
+			path = PrimaryButton;
 			sourceTree = "<group>";
 		};
 		52B53CED2B63513800A30404 /* PlayCard */ = {
@@ -293,7 +312,7 @@
 			files = (
 				0448B7112B492213000B6638 /* UserImageNameView.swift in Sources */,
 				043130E22B3F96DA00865BD9 /* RootView.swift in Sources */,
-				0448B7142B49296F000B6638 /* ButtonView.swift in Sources */,
+				0448B7142B49296F000B6638 /* SecondaryButtonView.swift in Sources */,
 				043130EE2B42359A00865BD9 /* TabBarItem.swift in Sources */,
 				0448B70D2B491E6D000B6638 /* LeaderboardTileView.swift in Sources */,
 				04D12C662B538B2600F11043 /* Users.swift in Sources */,
@@ -311,6 +330,7 @@
 				043130F72B423E7900865BD9 /* PlayView.swift in Sources */,
 				0448B71A2B493B74000B6638 /* RecentGameView.swift in Sources */,
 				043130EC2B42310700865BD9 /* TabBarItemsPreferenceKey.swift in Sources */,
+				52896B322B63587E00527528 /* PrimaryButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
