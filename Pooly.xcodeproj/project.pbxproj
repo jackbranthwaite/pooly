@@ -31,6 +31,7 @@
 		04D12C662B538B2600F11043 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D12C652B538B2600F11043 /* Users.swift */; };
 		52896B322B63587E00527528 /* PrimaryButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52896B312B63587E00527528 /* PrimaryButtonView.swift */; };
 		52B53CEF2B63514C00A30404 /* PlayCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B53CEE2B63514C00A30404 /* PlayCardView.swift */; };
+		52EE8C442B7084BF006C8FF3 /* DrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EE8C432B7084BF006C8FF3 /* DrawerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,7 @@
 		04D12C652B538B2600F11043 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		52896B312B63587E00527528 /* PrimaryButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonView.swift; sourceTree = "<group>"; };
 		52B53CEE2B63514C00A30404 /* PlayCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayCardView.swift; sourceTree = "<group>"; };
+		52EE8C432B7084BF006C8FF3 /* DrawerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 		043130DD2B3F956D00865BD9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				52EE8C412B708473006C8FF3 /* Drawer */,
 				52896B2F2B63584000527528 /* GenericComponents */,
 				0448B7152B49378A000B6638 /* RecentGames */,
 				043130F52B423E6700865BD9 /* PlayPage */,
@@ -239,6 +242,22 @@
 			path = PlayCard;
 			sourceTree = "<group>";
 		};
+		52EE8C412B708473006C8FF3 /* Drawer */ = {
+			isa = PBXGroup;
+			children = (
+				52EE8C422B708480006C8FF3 /* DrawerController */,
+			);
+			path = Drawer;
+			sourceTree = "<group>";
+		};
+		52EE8C422B708480006C8FF3 /* DrawerController */ = {
+			isa = PBXGroup;
+			children = (
+				52EE8C432B7084BF006C8FF3 /* DrawerViewController.swift */,
+			);
+			path = DrawerController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -315,6 +334,7 @@
 				0448B7142B49296F000B6638 /* SecondaryButtonView.swift in Sources */,
 				043130EE2B42359A00865BD9 /* TabBarItem.swift in Sources */,
 				0448B70D2B491E6D000B6638 /* LeaderboardTileView.swift in Sources */,
+				52EE8C442B7084BF006C8FF3 /* DrawerViewController.swift in Sources */,
 				04D12C662B538B2600F11043 /* Users.swift in Sources */,
 				0448B70A2B47F771000B6638 /* AccountTileView.swift in Sources */,
 				043130F12B423E1B00865BD9 /* AccountView.swift in Sources */,
