@@ -23,6 +23,8 @@
 		0448B7142B49296F000B6638 /* SecondaryButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0448B7132B49296F000B6638 /* SecondaryButtonView.swift */; };
 		0448B7172B49379F000B6638 /* RecentGamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0448B7162B49379F000B6638 /* RecentGamesView.swift */; };
 		0448B71A2B493B74000B6638 /* RecentGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0448B7192B493B74000B6638 /* RecentGameView.swift */; };
+		04852A2F2B72093200D1B224 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04852A2E2B72093200D1B224 /* LoginView.swift */; };
+		04852A382B72165F00D1B224 /* TextFieldModifierView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04852A372B72165F00D1B224 /* TextFieldModifierView.swift */; };
 		0494F54E2B3CDCAE0069153D /* PoolyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0494F54D2B3CDCAE0069153D /* PoolyApp.swift */; };
 		0494F5522B3CDCAE0069153D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0494F5512B3CDCAE0069153D /* Assets.xcassets */; };
 		0494F5552B3CDCAE0069153D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0494F5542B3CDCAE0069153D /* Preview Assets.xcassets */; };
@@ -51,6 +53,8 @@
 		0448B7132B49296F000B6638 /* SecondaryButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButtonView.swift; sourceTree = "<group>"; };
 		0448B7162B49379F000B6638 /* RecentGamesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentGamesView.swift; sourceTree = "<group>"; };
 		0448B7192B493B74000B6638 /* RecentGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentGameView.swift; sourceTree = "<group>"; };
+		04852A2E2B72093200D1B224 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		04852A372B72165F00D1B224 /* TextFieldModifierView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldModifierView.swift; sourceTree = "<group>"; };
 		0494F54A2B3CDCAE0069153D /* Pooly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pooly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0494F54D2B3CDCAE0069153D /* PoolyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoolyApp.swift; sourceTree = "<group>"; };
 		0494F5512B3CDCAE0069153D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -77,6 +81,7 @@
 		043130DD2B3F956D00865BD9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				04852A2D2B72092300D1B224 /* Login */,
 				52EE8C412B708473006C8FF3 /* Drawer */,
 				52896B2F2B63584000527528 /* GenericComponents */,
 				0448B7152B49378A000B6638 /* RecentGames */,
@@ -178,6 +183,22 @@
 			path = RecentGame;
 			sourceTree = "<group>";
 		};
+		04852A2D2B72092300D1B224 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				04852A2E2B72093200D1B224 /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		04852A362B72163E00D1B224 /* TextFieldModifier */ = {
+			isa = PBXGroup;
+			children = (
+				04852A372B72165F00D1B224 /* TextFieldModifierView.swift */,
+			);
+			path = TextFieldModifier;
+			sourceTree = "<group>";
+		};
 		0494F5412B3CDCAE0069153D = {
 			isa = PBXGroup;
 			children = (
@@ -219,6 +240,7 @@
 		52896B2F2B63584000527528 /* GenericComponents */ = {
 			isa = PBXGroup;
 			children = (
+				04852A362B72163E00D1B224 /* TextFieldModifier */,
 				52896B302B63586D00527528 /* PrimaryButton */,
 				0448B7122B492963000B6638 /* SecondaryButton */,
 				043130F82B42414500865BD9 /* Header */,
@@ -330,9 +352,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0448B7112B492213000B6638 /* UserImageNameView.swift in Sources */,
+				04852A382B72165F00D1B224 /* TextFieldModifierView.swift in Sources */,
 				043130E22B3F96DA00865BD9 /* RootView.swift in Sources */,
 				0448B7142B49296F000B6638 /* SecondaryButtonView.swift in Sources */,
 				043130EE2B42359A00865BD9 /* TabBarItem.swift in Sources */,
+				04852A2F2B72093200D1B224 /* LoginView.swift in Sources */,
 				0448B70D2B491E6D000B6638 /* LeaderboardTileView.swift in Sources */,
 				52EE8C442B7084BF006C8FF3 /* DrawerViewController.swift in Sources */,
 				04D12C662B538B2600F11043 /* Users.swift in Sources */,

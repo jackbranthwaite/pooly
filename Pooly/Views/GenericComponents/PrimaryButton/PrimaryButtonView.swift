@@ -19,13 +19,13 @@ struct PrimaryButtonView: View {
                 .overlay(content: {
                     HStack(content: {
                         Text(text)
-                            .font(.system(size: 11))
+                            .font(.system(size: 14))
                             .foregroundStyle(Color(red: 238/255, green: 238/255, blue: 238/255))
                             .padding(.leading)
                     })
                 })
-                .frame(maxWidth: .infinity, minHeight: 42, maxHeight: 42)
-                .cornerRadius(8)
+                .frame(maxWidth: .infinity, minHeight: 50, maxHeight: 50)
+                .cornerRadius(12)
                 .foregroundStyle(Color(red: 69/255, green: 4/255, blue: 115/255, opacity: 1))
         }
            
