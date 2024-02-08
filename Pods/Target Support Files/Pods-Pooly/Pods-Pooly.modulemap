@@ -1,0 +1,6 @@
+framework module Pods_Pooly {
+  umbrella header "Pods-Pooly-umbrella.h"
+
+  export *
+  module * { export * }
+}
