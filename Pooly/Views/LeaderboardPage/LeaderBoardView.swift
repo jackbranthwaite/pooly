@@ -26,7 +26,7 @@ struct LeaderBoardView: View {
             VStack() {
                 ForEach(users, id: \.self) { user in
                     UserImageNameView(user: user, users: users)
-                        .padding(.bottom, 20)
+                                         .padding(.bottom, 20)
                 }
             }
             .padding(.horizontal, 24)

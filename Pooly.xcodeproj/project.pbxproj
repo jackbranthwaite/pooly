@@ -34,6 +34,12 @@
 		0494F54E2B3CDCAE0069153D /* PoolyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0494F54D2B3CDCAE0069153D /* PoolyApp.swift */; };
 		0494F5522B3CDCAE0069153D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0494F5512B3CDCAE0069153D /* Assets.xcassets */; };
 		0494F5552B3CDCAE0069153D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0494F5542B3CDCAE0069153D /* Preview Assets.xcassets */; };
+		04B8A3C62B78776200B913B0 /* GuestTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B8A3C52B78776200B913B0 /* GuestTabBarView.swift */; };
+		04B8A3C82B78778400B913B0 /* GuestTabBarContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B8A3C72B78778400B913B0 /* GuestTabBarContainerView.swift */; };
+		04B8A3CA2B7877AD00B913B0 /* CustomGuestTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B8A3C92B7877AD00B913B0 /* CustomGuestTabBarView.swift */; };
+		04B8A3CC2B7877B900B913B0 /* TabBarItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B8A3CB2B7877B900B913B0 /* TabBarItemView.swift */; };
+		04B8A3CE2B7879AA00B913B0 /* GuestTabBarItemsPreferenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B8A3CD2B7879AA00B913B0 /* GuestTabBarItemsPreferenceKey.swift */; };
+		04CF3D5C2B786E5E00C0D81E /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CF3D5B2B786E5E00C0D81E /* RegisterView.swift */; };
 		04D12C622B5386E600F11043 /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = 04D12C612B5386E600F11043 /* users.json */; };
 		04D12C642B53889B00F11043 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D12C632B53889B00F11043 /* User.swift */; };
 		04D12C662B538B2600F11043 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D12C652B538B2600F11043 /* Users.swift */; };
@@ -66,6 +72,12 @@
 		0494F54D2B3CDCAE0069153D /* PoolyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoolyApp.swift; sourceTree = "<group>"; };
 		0494F5512B3CDCAE0069153D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0494F5542B3CDCAE0069153D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		04B8A3C52B78776200B913B0 /* GuestTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestTabBarView.swift; sourceTree = "<group>"; };
+		04B8A3C72B78778400B913B0 /* GuestTabBarContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestTabBarContainerView.swift; sourceTree = "<group>"; };
+		04B8A3C92B7877AD00B913B0 /* CustomGuestTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomGuestTabBarView.swift; sourceTree = "<group>"; };
+		04B8A3CB2B7877B900B913B0 /* TabBarItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItemView.swift; sourceTree = "<group>"; };
+		04B8A3CD2B7879AA00B913B0 /* GuestTabBarItemsPreferenceKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestTabBarItemsPreferenceKey.swift; sourceTree = "<group>"; };
+		04CF3D5B2B786E5E00C0D81E /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		04D12C612B5386E600F11043 /* users.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
 		04D12C632B53889B00F11043 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		04D12C652B538B2600F11043 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
@@ -93,6 +105,8 @@
 		043130DD2B3F956D00865BD9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				04B8A3C42B78774300B913B0 /* GuestTabBar */,
+				04CF3D5A2B786E4D00C0D81E /* Register */,
 				04852A2D2B72092300D1B224 /* Login */,
 				52EE8C412B708473006C8FF3 /* Drawer */,
 				52896B2F2B63584000527528 /* GenericComponents */,
@@ -250,6 +264,26 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		04B8A3C42B78774300B913B0 /* GuestTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				04B8A3C52B78776200B913B0 /* GuestTabBarView.swift */,
+				04B8A3C72B78778400B913B0 /* GuestTabBarContainerView.swift */,
+				04B8A3C92B7877AD00B913B0 /* CustomGuestTabBarView.swift */,
+				04B8A3CB2B7877B900B913B0 /* TabBarItemView.swift */,
+				04B8A3CD2B7879AA00B913B0 /* GuestTabBarItemsPreferenceKey.swift */,
+			);
+			path = GuestTabBar;
+			sourceTree = "<group>";
+		};
+		04CF3D5A2B786E4D00C0D81E /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				04CF3D5B2B786E5E00C0D81E /* RegisterView.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
 		52896B2F2B63584000527528 /* GenericComponents */ = {
 			isa = PBXGroup;
 			children = (
@@ -381,11 +415,14 @@
 				0448B7142B49296F000B6638 /* SecondaryButtonView.swift in Sources */,
 				043130EE2B42359A00865BD9 /* TabBarItem.swift in Sources */,
 				04852A2F2B72093200D1B224 /* LoginView.swift in Sources */,
+				04B8A3CE2B7879AA00B913B0 /* GuestTabBarItemsPreferenceKey.swift in Sources */,
 				0448B70D2B491E6D000B6638 /* LeaderboardTileView.swift in Sources */,
 				52EE8C442B7084BF006C8FF3 /* DrawerViewController.swift in Sources */,
 				04D12C662B538B2600F11043 /* Users.swift in Sources */,
+				04B8A3C82B78778400B913B0 /* GuestTabBarContainerView.swift in Sources */,
 				0448B70A2B47F771000B6638 /* AccountTileView.swift in Sources */,
 				043130F12B423E1B00865BD9 /* AccountView.swift in Sources */,
+				04CF3D5C2B786E5E00C0D81E /* RegisterView.swift in Sources */,
 				52B53CEF2B63514C00A30404 /* PlayCardView.swift in Sources */,
 				043130E82B4206AF00865BD9 /* CustomTabBarView.swift in Sources */,
 				043130F42B423E5500865BD9 /* LeaderBoardView.swift in Sources */,
@@ -397,8 +434,11 @@
 				04D12C642B53889B00F11043 /* User.swift in Sources */,
 				043130F72B423E7900865BD9 /* PlayView.swift in Sources */,
 				0448B71A2B493B74000B6638 /* RecentGameView.swift in Sources */,
+				04B8A3CA2B7877AD00B913B0 /* CustomGuestTabBarView.swift in Sources */,
+				04B8A3CC2B7877B900B913B0 /* TabBarItemView.swift in Sources */,
 				043130EC2B42310700865BD9 /* TabBarItemsPreferenceKey.swift in Sources */,
 				52896B322B63587E00527528 /* PrimaryButtonView.swift in Sources */,
+				04B8A3C62B78776200B913B0 /* GuestTabBarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
