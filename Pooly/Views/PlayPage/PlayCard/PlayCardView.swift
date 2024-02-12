@@ -34,6 +34,8 @@ struct PlayCardView: View {
         .background(Color(red: 241/255, green: 245/255, blue: 251/255).clipShape(RoundedRectangle(cornerRadius:12)))
         .padding(.top, 30)
     }
+    
+   
 }
 
 #Preview {

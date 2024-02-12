@@ -11,7 +11,7 @@ import Firebase
 
 struct LoginView: View {
     
-    @Binding var loggedIn: Bool
+    @Binding var userIsLoggedIn: Bool
     
     @State private var email: String = ""
     @State private var password: String = ""
@@ -38,7 +38,7 @@ struct LoginView: View {
         .onAppear() {
             Auth.auth().addStateDidChangeListener { auth, user in
                 if(user != nil) {
-                    self.loggedIn.toggle()
+                    self.userIsLoggedIn.toggle()
                 }
             }
         }
@@ -55,6 +55,6 @@ struct LoginView: View {
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
         
-        LoginView(loggedIn: .constant(false))
+        LoginView(userIsLoggedIn: .constant(false))
     }
 }

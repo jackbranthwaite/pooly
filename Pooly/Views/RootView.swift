@@ -11,15 +11,17 @@ import Firebase
 
 struct RootView: View {
     
-    @State private var userIsLoggedIn: Bool = false
+    @State private var userIsLoggedIn: Bool = true
+    
+    
     
     var body: some View {
         VStack() {
-            Header()
+            Header(userIsLoggedIn: $userIsLoggedIn)
             if(userIsLoggedIn){
                 AppTabBarView()
             } else {
-               GuestTabBarView()
+                GuestTabBarView(userIsLoggedIn: $userIsLoggedIn)
             }
         }
         .background(LinearGradient(gradient: Gradient(colors: [Color(red: 207/255, green: 225/255, blue: 241/255), Color(red: 206/255, green: 204/255, blue: 245/255)]), startPoint: .top, endPoint: .bottom))

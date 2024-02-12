@@ -10,6 +10,8 @@ import Firebase
 
 struct Header: View {
     
+    @Binding var userIsLoggedIn: Bool
+    
     @State private var modal: Bool = false
     
     var body: some View {
@@ -27,18 +29,23 @@ struct Header: View {
             Alert(title: Text( "Are you sure you want to sign out?"), primaryButton: .destructive(Text("Sign Out")) {
                 do {
                     try Auth.auth().signOut()
+                   
                 } catch{
                     print("Sign out could not be completed")
                 }
-
+                Auth.auth().addStateDidChangeListener { auth, user in
+                    if(user == nil) {
+                        self.userIsLoggedIn.toggle()
+                    }
+                }
             }, secondaryButton: .cancel())
         })
-        
-            
         
     }
 }
 
-#Preview {
-    Header()
+struct Header_Previwes: PreviewProvider {
+    static var previews: some View {
+        Header(userIsLoggedIn: .constant(false))
+    }
 }

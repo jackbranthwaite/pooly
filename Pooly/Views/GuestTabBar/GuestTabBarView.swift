@@ -8,18 +8,25 @@
 import SwiftUI
 
 struct GuestTabBarView: View {
+    
+    @Binding var userIsLoggedIn: Bool
+    
     @State private var tabSelection: TabBarItemView = .login
+    
+    
     
     var body: some View {
         GuestTabBarContainerView(selection: $tabSelection) {
-                LoginView(loggedIn: .constant(false))
+                LoginView(userIsLoggedIn: $userIsLoggedIn)
                     .tabBarItem(tab: .login, selection: $tabSelection)
-                RegisterView(loggedIn: .constant(false))
+                RegisterView(userIsLoggedIn: $userIsLoggedIn)
                     .tabBarItem(tab: .register, selection: $tabSelection)
         }
     }
 }
 
-#Preview {
-    GuestTabBarView()
+struct GuestTabBarView_Previwes: PreviewProvider {
+    static var previews: some View {
+        GuestTabBarView(userIsLoggedIn: .constant(false))
+    }
 }

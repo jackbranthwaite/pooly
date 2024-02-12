@@ -10,7 +10,7 @@ import Firebase
 
 struct RegisterView: View {
     
-    @Binding var loggedIn: Bool
+    @Binding var userIsLoggedIn: Bool
     
     @State private var name: String = ""
     @State private var email: String = ""
@@ -80,7 +80,7 @@ struct RegisterView: View {
         .onAppear() {
             Auth.auth().addStateDidChangeListener { auth, user in
                 if(user != nil) {
-                    self.loggedIn.toggle()
+                    self.userIsLoggedIn.toggle()
                 }
             }
         }
@@ -110,6 +110,6 @@ struct RegisterView: View {
 struct RegisterView_Previwes: PreviewProvider {
     static var previews: some View {
         
-        RegisterView(loggedIn: .constant(false))
+        RegisterView(userIsLoggedIn: .constant(false))
     }
 }
