@@ -45,6 +45,7 @@
 		04D12C662B538B2600F11043 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D12C652B538B2600F11043 /* Users.swift */; };
 		52896B322B63587E00527528 /* PrimaryButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52896B312B63587E00527528 /* PrimaryButtonView.swift */; };
 		52B53CEF2B63514C00A30404 /* PlayCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B53CEE2B63514C00A30404 /* PlayCardView.swift */; };
+		52CB63A12B7B0B0700597743 /* SheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CB63A02B7B0B0700597743 /* SheetView.swift */; };
 		52EE8C442B7084BF006C8FF3 /* DrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EE8C432B7084BF006C8FF3 /* DrawerViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -83,6 +84,7 @@
 		04D12C652B538B2600F11043 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		52896B312B63587E00527528 /* PrimaryButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonView.swift; sourceTree = "<group>"; };
 		52B53CEE2B63514C00A30404 /* PlayCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayCardView.swift; sourceTree = "<group>"; };
+		52CB63A02B7B0B0700597743 /* SheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetView.swift; sourceTree = "<group>"; };
 		52EE8C432B7084BF006C8FF3 /* DrawerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,6 +107,7 @@
 		043130DD2B3F956D00865BD9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				52CB63952B7B08E600597743 /* Sheet */,
 				04B8A3C42B78774300B913B0 /* GuestTabBar */,
 				04CF3D5A2B786E4D00C0D81E /* Register */,
 				04852A2D2B72092300D1B224 /* Login */,
@@ -311,6 +314,14 @@
 			path = PlayCard;
 			sourceTree = "<group>";
 		};
+		52CB63952B7B08E600597743 /* Sheet */ = {
+			isa = PBXGroup;
+			children = (
+				52CB63A02B7B0B0700597743 /* SheetView.swift */,
+			);
+			path = Sheet;
+			sourceTree = "<group>";
+		};
 		52EE8C412B708473006C8FF3 /* Drawer */ = {
 			isa = PBXGroup;
 			children = (
@@ -411,6 +422,7 @@
 			files = (
 				0448B7112B492213000B6638 /* UserImageNameView.swift in Sources */,
 				04852A382B72165F00D1B224 /* TextFieldModifierView.swift in Sources */,
+				52CB63A12B7B0B0700597743 /* SheetView.swift in Sources */,
 				043130E22B3F96DA00865BD9 /* RootView.swift in Sources */,
 				0448B7142B49296F000B6638 /* SecondaryButtonView.swift in Sources */,
 				043130EE2B42359A00865BD9 /* TabBarItem.swift in Sources */,
