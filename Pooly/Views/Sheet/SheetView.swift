@@ -119,6 +119,7 @@ private class CustomSheetHostingViewController<Content: View>: UIHostingControll
             sheetPresentationController.prefersGrabberVisible = true
             sheetPresentationController.prefersScrollingExpandsWhenScrolledToEdge = false
             sheetPresentationController.preferredCornerRadius = 20
+            
 
         }
     }

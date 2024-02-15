@@ -40,23 +40,7 @@ struct PlayCardView: View {
             showSheet.toggle()
         }
         .sheetPresentation(isPresented: $showSheet, sheetView: {
-            VStack(alignment: .leading){
-                ScrollView() {
-                    AccountTileView()
-                }
-                .padding(.top, 20)
-                HStack {
-                    PrimaryButtonView(text: "Play Now" ) {
-                        print("Play time")
-                    }
-                    .padding()
-                }
-                .background(Color.white)
-                .overlay(Rectangle().frame(width: nil, height: 0.25, alignment: .top).foregroundColor(Color.gray), alignment: .top)
-            }
-                .frame(maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
-                .background(Color.white)
-                
+            PlaySheetView()        
         }, onDismiss: {
            
         })
