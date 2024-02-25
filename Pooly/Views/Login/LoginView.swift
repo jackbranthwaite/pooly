@@ -8,49 +8,58 @@
 import SwiftUI
 import Firebase
 
+@MainActor
+final class LoginUserViewModel: ObservableObject {
+    @Published var email = ""
+    @Published var password = ""
+    
+    func login() async throws {
+        guard !email.isEmpty, !password.isEmpty else {
+            print("No email or password found")
+            return
+        }
+        try await AuthenticationManager.shared.signInUser(email: email, password: password)
+    }
+}
+
 
 struct LoginView: View {
     
-    @Binding var userIsLoggedIn: Bool
+    @StateObject private var viewModel = LoginUserViewModel()
     
-    @State private var email: String = ""
-    @State private var password: String = ""
+    @Binding var userIsLoggedIn: Bool
     
     var body: some View {
         VStack(spacing: 20){
             Text("Welcome")
-            TextField(text: $email, prompt: Text("Your email")) {
+            TextField(text: $viewModel.email, prompt: Text("Your email")) {
                 Text("Email")
             }
                 .modifier(TextFieldModifierView())
             
-            SecureField(text: $password, prompt: Text("Your Password")) {
+            SecureField(text: $viewModel.password, prompt: Text("Your Password")) {
                 Text("Password")
             }
             .modifier(TextFieldModifierView())
             
             PrimaryButtonView(text: "Sign In"){
-                login()
+                Task {
+                    do {
+                        try await viewModel.login()
+                        userIsLoggedIn = true
+                        return
+                    } catch {
+                        print(error)
+                    }
+                }
             }
         }
         .frame(maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
         .padding(.horizontal, 20)
-        .onAppear() {
-            Auth.auth().addStateDidChangeListener { auth, user in
-                if(user != nil) {
-                    self.userIsLoggedIn.toggle()
-                }
-            }
-        }
+        
     }
     
-    func login() {
-        Auth.auth().signIn(withEmail: email, password: password) { result, error in
-            if(error != nil){
-                print(error!.localizedDescription)
-            }
-        }
-    }
+    
 }
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {

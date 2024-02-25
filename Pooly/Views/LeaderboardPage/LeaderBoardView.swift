@@ -11,12 +11,12 @@ struct LeaderBoardView: View {
     
     // TODO: Hardcoded test data
     
-    let users: [User]
+    let users: [UserPooly]
     
     init() {
         let url = Bundle.main.url(forResource: "users", withExtension: "json")!
         let data = try! Data(contentsOf: url)
-        users = try! JSONDecoder().decode([User].self, from: data).sorted { $0.current_position < $1.current_position }
+        users = try! JSONDecoder().decode([UserPooly].self, from: data).sorted { $0.current_position < $1.current_position }
     }
 
     

@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct User: Decodable, Identifiable, Hashable {
+struct UserPooly: Decodable, Identifiable, Hashable {
     
     let id: Int
     let first_name: String
@@ -19,5 +19,5 @@ struct User: Decodable, Identifiable, Hashable {
     let current_position: Int
     let win_percentage: Int
 
-    static let example = User(id: 1, first_name: "Harold", last_name: "Test", email: "harold.test@gmail.com", colour: ".pink", memoji: 1, company: "ClickSuite", current_position: 1, win_percentage: 10)
+    static let example = UserPooly(id: 1, first_name: "Harold", last_name: "Test", email: "harold.test@gmail.com", colour: ".pink", memoji: 1, company: "ClickSuite", current_position: 1, win_percentage: 10)
 }

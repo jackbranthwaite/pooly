@@ -34,6 +34,7 @@
 		0494F54E2B3CDCAE0069153D /* PoolyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0494F54D2B3CDCAE0069153D /* PoolyApp.swift */; };
 		0494F5522B3CDCAE0069153D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0494F5512B3CDCAE0069153D /* Assets.xcassets */; };
 		0494F5552B3CDCAE0069153D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0494F5542B3CDCAE0069153D /* Preview Assets.xcassets */; };
+		04A006442B8B01C400B2CA0E /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A006432B8B01C400B2CA0E /* AuthenticationManager.swift */; };
 		04A8E1092B7DF5A100E580AD /* PlaySheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A8E1082B7DF5A100E580AD /* PlaySheetView.swift */; };
 		04B8A3C62B78776200B913B0 /* GuestTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B8A3C52B78776200B913B0 /* GuestTabBarView.swift */; };
 		04B8A3C82B78778400B913B0 /* GuestTabBarContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B8A3C72B78778400B913B0 /* GuestTabBarContainerView.swift */; };
@@ -74,6 +75,7 @@
 		0494F54D2B3CDCAE0069153D /* PoolyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoolyApp.swift; sourceTree = "<group>"; };
 		0494F5512B3CDCAE0069153D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0494F5542B3CDCAE0069153D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		04A006432B8B01C400B2CA0E /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
 		04A8E1082B7DF5A100E580AD /* PlaySheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySheetView.swift; sourceTree = "<group>"; };
 		04B8A3C52B78776200B913B0 /* GuestTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestTabBarView.swift; sourceTree = "<group>"; };
 		04B8A3C72B78778400B913B0 /* GuestTabBarContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestTabBarContainerView.swift; sourceTree = "<group>"; };
@@ -249,6 +251,7 @@
 		0494F54C2B3CDCAE0069153D /* Pooly */ = {
 			isa = PBXGroup;
 			children = (
+				04A006422B8B01AD00B2CA0E /* Authentication */,
 				0494F54D2B3CDCAE0069153D /* PoolyApp.swift */,
 				043130DD2B3F956D00865BD9 /* Views */,
 				0494F5512B3CDCAE0069153D /* Assets.xcassets */,
@@ -267,6 +270,14 @@
 				0494F5542B3CDCAE0069153D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		04A006422B8B01AD00B2CA0E /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				04A006432B8B01C400B2CA0E /* AuthenticationManager.swift */,
+			);
+			path = Authentication;
 			sourceTree = "<group>";
 		};
 		04A8E1072B7DF59000E580AD /* PlaySheet */ = {
@@ -455,6 +466,7 @@
 				043130E62B42065A00865BD9 /* AppTabBarView.swift in Sources */,
 				043130EA2B420EFF00865BD9 /* CustomTabBarContainerView.swift in Sources */,
 				04D12C642B53889B00F11043 /* User.swift in Sources */,
+				04A006442B8B01C400B2CA0E /* AuthenticationManager.swift in Sources */,
 				04A8E1092B7DF5A100E580AD /* PlaySheetView.swift in Sources */,
 				043130F72B423E7900865BD9 /* PlayView.swift in Sources */,
 				0448B71A2B493B74000B6638 /* RecentGameView.swift in Sources */,

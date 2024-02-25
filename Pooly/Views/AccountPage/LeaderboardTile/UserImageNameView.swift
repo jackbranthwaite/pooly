@@ -9,8 +9,8 @@ import SwiftUI
 
 struct UserImageNameView: View {
     
-    let user: User
-    let users: [User]
+    let user: UserPooly
+    let users: [UserPooly]
     
     var body: some View {
         HStack {
@@ -55,7 +55,7 @@ struct UserImageNameView: View {
 struct UserImageNameView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            UserImageNameView(user: User.example, users: [User.example])
+            UserImageNameView(user: UserPooly.example, users: [UserPooly.example])
         }
     }
 }

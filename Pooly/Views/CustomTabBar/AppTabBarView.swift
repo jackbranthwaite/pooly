@@ -20,6 +20,7 @@ struct AppTabBarView: View {
             LeaderBoardView()
                 .tabBarItem(tab: .leaderboard, selection: $tabSelection)
         }
+            .ignoresSafeArea(.keyboard)
     }
 }
 

@@ -22,6 +22,7 @@ struct GuestTabBarView: View {
                 RegisterView(userIsLoggedIn: $userIsLoggedIn)
                     .tabBarItem(tab: .register, selection: $tabSelection)
         }
+            .ignoresSafeArea(.keyboard)
     }
 }
 

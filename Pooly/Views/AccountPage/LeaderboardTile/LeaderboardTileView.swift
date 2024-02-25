@@ -11,12 +11,12 @@ struct LeaderboardTileView: View {
     
     // TODO: Hardcoded test data
     
-    let users: [User]
+    let users: [UserPooly]
     
     init() {
         let url = Bundle.main.url(forResource: "users", withExtension: "json")!
         let data = try! Data(contentsOf: url)
-        users = try! JSONDecoder().decode([User].self, from: data).sorted { $0.current_position < $1.current_position }
+        users = try! JSONDecoder().decode([UserPooly].self, from: data).sorted { $0.current_position < $1.current_position }
     }
     
     var body: some View {
@@ -39,9 +39,7 @@ struct LeaderboardTileView: View {
                 
             }
                 .padding(.horizontal, 16)
-            SecondaryButtonView()
-                .padding(.horizontal, 16)
-                .padding(.bottom, 16)
+           
         }
         .frame(maxWidth: .infinity)
         .overlay(RoundedRectangle(cornerRadius: 12).stroke( (Color(red: 229/255, green: 229/255, blue: 229/255)), lineWidth: 1))

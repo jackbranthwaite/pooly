@@ -13,9 +13,9 @@ import Foundation
 // Observeable object watches for changes in the data and updates when required
 
 class Users: ObservableObject {
-    let people: [User]
+    let people: [UserPooly]
     
-    var primary: User {
+    var primary: UserPooly {
         people[0]
     }
     
@@ -23,7 +23,7 @@ class Users: ObservableObject {
 //  The exclamation mark is unsafe - you're guaranteeing the file will be there with that but that's not true - app will crash if the file is not there
         let url = Bundle.main.url(forResource: "users", withExtension: "json")!
         let data = try! Data(contentsOf: url)
-        people = try! JSONDecoder().decode([User].self, from: data)
+        people = try! JSONDecoder().decode([UserPooly].self, from: data)
     }
 }
 

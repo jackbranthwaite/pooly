@@ -8,11 +8,21 @@
 import SwiftUI
 import Firebase
 
+@MainActor
+final class HeaderViewModel: ObservableObject {
+    
+    func logout() throws {
+       try AuthenticationManager.shared.signOut()
+    }
+}
+
 struct Header: View {
     
     @Binding var userIsLoggedIn: Bool
     
     @State private var modal: Bool = false
+    
+    @StateObject private var viewModel = HeaderViewModel()
     
     var body: some View {
         HStack{
@@ -28,16 +38,12 @@ struct Header: View {
         .alert(isPresented: $modal, content: {
             Alert(title: Text( "Are you sure you want to sign out?"), primaryButton: .destructive(Text("Sign Out")) {
                 do {
-                    try Auth.auth().signOut()
-                   
+                    try viewModel.logout()
+                    userIsLoggedIn = false
                 } catch{
                     print("Sign out could not be completed")
                 }
-                Auth.auth().addStateDidChangeListener { auth, user in
-                    if(user == nil) {
-                        self.userIsLoggedIn.toggle()
-                    }
-                }
+                
             }, secondaryButton: .cancel())
         })
         

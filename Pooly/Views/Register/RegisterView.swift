@@ -8,15 +8,30 @@
 import SwiftUI
 import Firebase
 
+@MainActor
+final class RegisterUserViewModel: ObservableObject {
+    @Published var email = ""
+    @Published var password = ""
+    
+    func register() async throws {
+        guard !email.isEmpty, !password.isEmpty else {
+            print("No email or password found")
+            return
+        }
+        try await AuthenticationManager.shared.createUser(email: email, password: password)
+    }
+}
+
 struct RegisterView: View {
+    
+    @StateObject var viewModel = RegisterUserViewModel()
     
     @Binding var userIsLoggedIn: Bool
     
     @State private var name: String = ""
-    @State private var email: String = ""
-    @State private var password: String = ""
     @State var chosenColor: Color = Color(red: 222/255, green:181/255, blue: 255/255)
     
+
     var body: some View {
         VStack(alignment: .center, spacing: 20){
             Text("Complete Your Profile")
@@ -61,18 +76,27 @@ struct RegisterView: View {
                 Text("First Name")
             }
                 .modifier(TextFieldModifierView())
-            TextField(text: $email, prompt: Text("Your email")) {
+            TextField(text: $viewModel.email, prompt: Text("Your email")) {
                 Text("Email")
             }
                 .modifier(TextFieldModifierView())
             
-            SecureField(text: $password, prompt: Text("Your Password")) {
+            SecureField(text: $viewModel.password, prompt: Text("Your Password")) {
                 Text("Password")
             }
             .modifier(TextFieldModifierView())
             
             PrimaryButtonView(text: "Sign Up"){
-                register()
+                Task {
+                    do {
+                        try await viewModel.register()
+                        userIsLoggedIn = true
+                        print ("Success")
+                        
+                    } catch {
+                        print("Error: \(error)")
+                    }
+                }
             }
         }
         .padding(.horizontal, 20)
@@ -90,21 +114,6 @@ struct RegisterView: View {
         chosenColor = colour
     }
     
-    func register() {
-        Auth.auth().createUser(withEmail: email, password: password) { result, error in
-            if(error != nil){
-                print(error!.localizedDescription)
-            }
-        }
-    }
-    
-    func login() {
-        Auth.auth().signIn(withEmail: email, password: password) { result, error in
-            if(error != nil){
-                print(error!.localizedDescription)
-            }
-        }
-    }
 }
 
 struct RegisterView_Previwes: PreviewProvider {
